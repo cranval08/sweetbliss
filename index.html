@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Bliss Bakery – Toko Kue Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">🎂 Sweet Bliss</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#products">Menu Kue</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#testimonials">Testimoni</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+      <button class="btn-order" onclick="scrollToSection('#contact')">Pesan Sekarang</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-content container">
+      <span class="badge">✨ Kue Artisan Handmade</span>
+      <h1>Setiap Gigitan<br /><span class="highlight">Adalah Kebahagiaan</span></h1>
+      <p>Kami memanggang dengan cinta, bahan-bahan segar pilihan, dan resep turun-temurun yang tak tergantikan.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary">Lihat Menu</a>
+        <a href="#about" class="btn-secondary">Pelajari Lebih Lanjut</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>500+</strong><span>Resep Kue</span></div>
+        <div class="stat"><strong>10K+</strong><span>Pelanggan Puas</span></div>
+        <div class="stat"><strong>8</strong><span>Tahun Pengalaman</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="cake-showcase">🎂</div>
+      <div class="floating-badge badge-1">🧁 Cupcake</div>
+      <div class="floating-badge badge-2">🍰 Cheesecake</div>
+      <div class="floating-badge badge-3">🎂 Wedding Cake</div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features">
+    <div class="container features-grid">
+      <div class="feature-card">
+        <span>🌿</span>
+        <h3>Bahan Alami</h3>
+        <p>Semua bahan dipilih dengan cermat dari sumber terpercaya, bebas pengawet buatan.</p>
+      </div>
+      <div class="feature-card">
+        <span>👩‍🍳</span>
+        <h3>Dibuat Dengan Cinta</h3>
+        <p>Setiap kue diproses secara handmade oleh pastry chef berpengalaman kami.</p>
+      </div>
+      <div class="feature-card">
+        <span>🚚</span>
+        <h3>Pengiriman Cepat</h3>
+        <p>Tersedia layanan pengiriman same-day untuk area tertentu, fresh from the oven.</p>
+      </div>
+      <div class="feature-card">
+        <span>🎁</span>
+        <h3>Custom Order</h3>
+        <p>Desain kue sesuai keinginan Anda — ulang tahun, pernikahan, atau acara spesial.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Menu Kami</span>
+        <h2>Pilihan Kue Terbaik</h2>
+        <p>Dari klasik hingga kreasi modern — semuanya lezat dan menggugah selera.</p>
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="cake">Kue Ulang Tahun</button>
+        <button class="filter-btn" data-filter="pastry">Pastry</button>
+        <button class="filter-btn" data-filter="custom">Custom</button>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-visual">
+        <div class="about-img-box">🏪</div>
+        <div class="about-badge">Sejak 2016</div>
+      </div>
+      <div class="about-text">
+        <span class="section-tag">Tentang Kami</span>
+        <h2>Dapur Kami, Passion Kami</h2>
+        <p>Sweet Bliss Bakery lahir dari kecintaan mendalam terhadap seni memanggang. Berawal dari dapur kecil di rumah, kini kami telah melayani ribuan pelanggan setia di seluruh kota.</p>
+        <p>Setiap produk kami dibuat dengan teknik patisserie modern dikombinasikan dengan kehangatan resep tradisional, menghasilkan cita rasa yang autentik dan tak terlupakan.</p>
+        <ul class="about-list">
+          <li>✅ Tersertifikasi halal dan higienis</li>
+          <li>✅ Penggunaan butter dan coklat premium impor</li>
+          <li>✅ Tersedia opsi bebas gluten & vegan</li>
+          <li>✅ Dikerjakan oleh tim chef bersertifikat</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Hubungi Kami</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimoni</span>
+        <h2>Kata Mereka</h2>
+        <p>Kepuasan pelanggan adalah kebanggaan terbesar kami.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Kue ultah dari Sweet Bliss benar-benar memukau! Tampilannya cantik dan rasanya luar biasa. Semua tamu pesta pun ketagihan!"</p>
+          <div class="testi-author">
+            <div class="avatar">SR</div>
+            <div><strong>Sari Rahayu</strong><span>Customer, Jakarta</span></div>
+          </div>
+        </div>
+        <div class="testi-card featured">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Wedding cake pesanan saya persis seperti yang saya impikan. Layanan customnya sangat responsif dan hasilnya melampaui ekspektasi!"</p>
+          <div class="testi-author">
+            <div class="avatar">DP</div>
+            <div><strong>Dinda & Prio</strong><span>Wedding Customer</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Sudah langganan selama 3 tahun. Croissant dan mille-crepe-nya selalu konsisten enak. Paling suka dinikmati sambil ngopi pagi!"</p>
+          <div class="testi-author">
+            <div class="avatar">BR</div>
+            <div><strong>Budi Riyanto</strong><span>Loyal Customer, Bandung</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <span class="section-tag">Kontak</span>
+        <h2>Mari Berkolaborasi</h2>
+        <p>Siap membantu Anda mewujudkan kue impian. Hubungi kami sekarang!</p>
+        <div class="contact-items">
+          <div class="contact-item"><span>📍</span><p>Jl. Mawar No. 12, Jakarta Selatan, Indonesia</p></div>
+          <div class="contact-item"><span>📞</span><p>+62 812-3456-7890</p></div>
+          <div class="contact-item"><span>✉️</span><p>hello@sweetbliss.id</p></div>
+          <div class="contact-item"><span>🕐</span><p>Senin–Sabtu: 08.00–20.00 WIB</p></div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <h3>Kirim Pesan</h3>
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Nama Lengkap" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Alamat Email" required />
+        </div>
+        <div class="form-group">
+          <select id="service">
+            <option value="">Pilih Layanan</option>
+            <option>Kue Ulang Tahun</option>
+            <option>Wedding Cake</option>
+            <option>Pastry & Roti</option>
+            <option>Custom Order</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="4" placeholder="Pesan atau detail pesanan Anda..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-width">Kirim Pesan 📩</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">🎂 Sweet Bliss</a>
+        <p>Memanggang kebahagiaan, satu kue di satu waktu.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+          <a href="#" aria-label="Facebook">👍</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#products">Menu Kue</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Layanan</h4>
+        <ul>
+          <li><a href="#">Kue Custom</a></li>
+          <li><a href="#">Wedding Cake</a></li>
+          <li><a href="#">Catering Acara</a></li>
+          <li><a href="#">Kelas Memanggang</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+          <li><a href="#">Syarat & Ketentuan</a></li>
+          <li><a href="#">Blog Resep</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Sweet Bliss Bakery. Dibuat dengan ❤️ di Jakarta.</p>
+    </div>
+  </footer>
+
+  <!-- ===== CHATBOX ===== -->
+  <div class="chat-widget" id="chatWidget">
+    <!-- Toggle Button -->
+    <button class="chat-toggle" id="chatToggle" aria-label="Buka chat asisten">
+      <span class="chat-icon-open">💬</span>
+      <span class="chat-icon-close" style="display:none;">✕</span>
+      <span class="chat-notif" id="chatNotif">1</span>
+    </button>
+
+    <!-- Chat Box -->
+    <div class="chat-box" id="chatBox">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">🎂</div>
+          <div>
+            <strong>Sweet Bliss Assistant</strong>
+            <span class="online-dot">● Online</span>
+          </div>
+        </div>
+        <button class="chat-close-btn" id="chatCloseBtn" aria-label="Tutup chat">✕</button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-msg bot">
+          <div class="msg-bubble">
+            Halo! 👋 Selamat datang di <strong>Sweet Bliss Bakery</strong>. Ada yang bisa saya bantu hari ini? Mau tanya soal kue, harga, atau pesanan?
+          </div>
+          <div class="msg-time">Sekarang</div>
+        </div>
+      </div>
+
+      <div class="chat-input-area">
+        <div class="quick-replies" id="quickReplies">
+          <button onclick="sendQuick('Lihat menu kue')">Menu Kue 🎂</button>
+          <button onclick="sendQuick('Berapa harga custom cake?')">Harga Custom</button>
+          <button onclick="sendQuick('Cara memesan kue')">Cara Pesan</button>
+        </div>
+        <div class="chat-input-row">
+          <input
+            type="text"
+            id="chatInput"
+            placeholder="Ketik pesan Anda..."
+            aria-label="Pesan chat"
+            autocomplete="off"
+          />
+          <button id="chatSend" aria-label="Kirim pesan">➤</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
